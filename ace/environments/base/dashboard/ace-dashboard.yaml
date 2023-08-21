@@ -3,12 +3,14 @@ kind: Dashboard
 metadata:
   name: ace-dashboard
 spec:
+  #disableRoutes: true
   license:
     accept: true
-    license: L-KSBM-C37J2R
+    license: L-AWVV-J3WMK6
     use: CloudPakForIntegrationNonProduction
   useCommonServices: true
-  version: 12.0.1.0-r3
+  version: 12.0.8.0-r3
   storage:
-    type: ephemeral
+    type: persistent-claim
+    class: ibmc-file-gold-gid
   replicas: 1
